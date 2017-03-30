@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Reader</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src = "index.js"></script>
+    <script src="animations.js" charset="utf-8"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class= "displayText" id="displayText">
+                TEXT
+            </div>
+        </div>
+
+        <div class="bottom">
+            <center>
+                <div class = "box1" >
+                    <textarea class="textArea" id="textarea" placeholder="Enter text here"></textarea>
+                </div>
+                <div class="box2" id="box2">
+                </div>
+            </center>
+        </div>
+        <div class="but">
+            <center>
+                <button class="startButton" id="startButton" onClick="start()">
+                    Start Reading
+                </button>
+
+                <button class="startButton" id="stopButton" onClick="stop()">
+                    Stop Reading
+                </button>
+            </center>
+        </div>
+    </div>
+    <div class="men">
+        <div class="settings com" id="com" onclick="settingClick()">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+        <div class="plus com" onclick="incSize()" id="com2">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </div>
+
+        <div class="minus com" onclick="decSize()" id="com3">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+        </div>
+    </div>
+<!--    <div class="menu">
+
+</div> -->
+
+</body>
+</html>
